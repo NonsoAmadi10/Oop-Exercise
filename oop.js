@@ -32,10 +32,7 @@ class Developer extends Employee { // Developer Class inherits from employee cla
 
     }
 
-    detailsAboutSelf(){
-    console.log(`I am a ${this.type} with ${this.experience} years experience in ${this.programmingLang}`)
-    }
-
+    
     resumptionTime(proposedTime, actualTime){ // Polymorphism- Employee methods are available for Developer class to reuse
         if(proposedTime < actualTime){
             console.log(`You were suppose to resume at ${proposedTime} but you came at ${actualTime}`)
